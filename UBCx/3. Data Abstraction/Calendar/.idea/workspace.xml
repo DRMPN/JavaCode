@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="18598cc0-48ef-4881-b23d-c31a9845986a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iYm7Gno2AeHFZPLFfSsUnhsXJ6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.CalendarTest">
+    <configuration name="CalendarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calendar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CalendarTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarTest.testCalendarIntervals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calendar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CalendarTest" />
+      <option name="METHOD_NAME" value="testCalendarIntervals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarTest.testListAddition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calendar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CalendarTest" />
+      <option name="METHOD_NAME" value="testListAddition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarTest.testMeeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calendar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CalendarTest" />
+      <option name="METHOD_NAME" value="testMeeting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarTest.testReminder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calendar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CalendarTest" />
+      <option name="METHOD_NAME" value="testReminder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CalendarTest" />
+        <item itemvalue="JUnit.CalendarTest.testReminder" />
+        <item itemvalue="JUnit.CalendarTest.testMeeting" />
+        <item itemvalue="JUnit.CalendarTest.testCalendarIntervals" />
+        <item itemvalue="JUnit.CalendarTest.testListAddition" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18598cc0-48ef-4881-b23d-c31a9845986a" name="Default Changelist" comment="" />
+      <created>1602092730516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602092730516</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="280" y="5" key="#Project_Structure" timestamp="1602092769161">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="5" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1602092769161" />
+    <state x="583" y="323" width="433" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1602167005492">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="583" y="323" width="433" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860@0.0.1600.860" timestamp="1602167005492" />
+    <state x="505" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602110046299">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="505" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1602110046299" />
+    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1602108120174">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1602108120174" />
+    <state width="1578" height="218" key="GridCell.Tab.0.bottom" timestamp="1602169142802">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1578" height="218" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602169142802" />
+    <state width="1578" height="218" key="GridCell.Tab.0.center" timestamp="1602169142802">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1578" height="218" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602169142802" />
+    <state width="1578" height="218" key="GridCell.Tab.0.left" timestamp="1602169142802">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1578" height="218" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602169142802" />
+    <state width="1578" height="218" key="GridCell.Tab.0.right" timestamp="1602169142802">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1578" height="218" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602169142802" />
+    <state x="504" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1602108768709">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="504" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1600.860@0.0.1600.860" timestamp="1602108768709" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1602168492209">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602168492209" />
+  </component>
+</project>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f05ee89a-eba0-47dc-beda-a3506b3dcf27" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1i8nF7nlyKl4QhAr1ga85Yy9AqX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.testTakeoutOrder.testMainCookOrder">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+      <module name="Takeout Order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testTakeoutOrder.testComboInformation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Takeout Order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.testTakeoutOrder" />
+      <option name="METHOD_NAME" value="testComboInformation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testTakeoutOrder.testComboPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Takeout Order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.testTakeoutOrder" />
+      <option name="METHOD_NAME" value="testComboPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testTakeoutOrder.testGetOrderStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Takeout Order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.testTakeoutOrder" />
+      <option name="METHOD_NAME" value="testGetOrderStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testTakeoutOrder.testMainCookOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Takeout Order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.testTakeoutOrder" />
+      <option name="METHOD_NAME" value="testMainCookOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.testTakeoutOrder.testMainCookOrder" />
+        <item itemvalue="JUnit.testTakeoutOrder.testComboInformation" />
+        <item itemvalue="JUnit.testTakeoutOrder.testGetOrderStatus" />
+        <item itemvalue="JUnit.testTakeoutOrder.testComboPrice" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f05ee89a-eba0-47dc-beda-a3506b3dcf27" name="Default Changelist" comment="" />
+      <created>1601297981558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601297981558</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1601301084858">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1601301084858" />
+    <state width="1578" height="218" key="GridCell.Tab.0.bottom" timestamp="1601408924721">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1578" height="218" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601408924721" />
+    <state width="1578" height="218" key="GridCell.Tab.0.center" timestamp="1601408924721">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1578" height="218" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1601408924721" />
+    <state width="1578" height="218" key="GridCell.Tab.0.left" timestamp="1601408924721">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1578" height="218" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1601408924721" />
+    <state width="1578" height="218" key="GridCell.Tab.0.right" timestamp="1601408924721">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1578" height="218" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1601408924721" />
+    <state x="280" y="3" key="SettingsEditor" timestamp="1601301134992">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="3" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1601301134992" />
+    <state x="504" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1601298965752">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="504" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1600.860@0.0.1600.860" timestamp="1601298965752" />
+    <state x="456" y="190" key="run.anything.popup" timestamp="1601308439140">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="190" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1601308439140" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1601401420246">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1601401420246" />
+  </component>
+</project>
