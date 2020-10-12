@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<!-- saved from url=(0175)https://courses.edx.org/xblock/block-v1:UBCx+SoftConst1x+3T2017+type@vertical+block@b8fb5cd506724038b1fe18ee6e4367b2?show_title=0&show_bookmark_button=0&format=Final%20Project -->
+<html lang="en"><!--<![endif]--><head dir="ltr"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script src="./nr-1184.min.js.download"></script><script type="text/javascript" async="" src="./dj_.js.download"></script><script type="text/javascript" async="" src="./gtm.js.download"></script><script type="text/javascript" async="" src="./analytics.js.download"></script><script async="" src="./branch-latest.min.js.download"></script><script type="text/javascript" async="" src="./analytics.min.js(1).download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true}};(window.NREUM||(NREUM={})).loader_config={xpid:"XA4GVl5ACwAEV1JQAA==",licenseKey:"1beac94c95",applicationID:"3343327"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(23),c={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,i.indexOf("dev")!==-1&&(c.dev=!0),i.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&o.on("internal-error",function(t){r(t.stack)}),c.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:i(c||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:s.now();o("err",[t,n])}var o=t("handle"),a=t(24),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),s.xhrWrappable&&t(10),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){o("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var i=t("ee"),o=t("handle"),a=t(9),c=t(8),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;i.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),i.on(w,function(t,e){var n=t[0];n instanceof x&&o("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),i.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),i.on(g+h,function(t){o("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){c.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return i.emit(n+"start",[t,a],c),c.then(function(t){return i.emit(n+"end",[null,t],c),t},function(t){throw i.emit(n+"end",[t],c),t})})}var i=t("ee").get("fetch"),o=t(24),a=t(23);e.exports=i;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),i.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(s+"done",[null,e],n)}else i.emit(s+"done",[t],n)}))},{}],7:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],9:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(s+u,r),o.on(c+u,i)},{}],10:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function o(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(v,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),w=Date.now(),v={spanId:h,traceId:m,timestamp:w};return(t.sameOrigin||s(t)&&l())&&(v.traceContextParentHeader=i(h,m),v.traceContextStateHeader=o(h,w,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(v.newrelicHeader=a(h,m,w,n,r,f)),v}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",c=1,s="",f="";return i+"@nr="+o+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(c.d.tk=o),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(20),h=t(13);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],12:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function o(t,e){t.params.status=e.status;var n=w(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof v&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)})}},{}],13:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},{}],14:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(16);e.exports=r},{}],15:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(23),c=t(24),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],16:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],17:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],18:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(25);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],19:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!w){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),w=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(22),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var w=!1,v=["click","keydown","mousedown","pointerdown","touchstart"];v.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],20:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)i=o[c],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],21:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=s[1])}e.exports={agent:i,version:o,match:r}},{}],22:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],23:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],24:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],25:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?s(t,c,o):o()}function n(n,r,i,o){if(!l.aborted||o){t&&t(n,r,i);for(var a=e(i),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||i(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:w,listeners:m,context:e,buffer:v,abort:a,aborted:!1};return x}function o(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(23),u={},d={},l=e.exports=i();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(g,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=t(18),c=t("handle"),s=t(23),f=t("ee"),u=t(21),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},y=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:a.getLastTimestamp(),now:a,origin:v,features:{},xhrWrappable:y,userAgent:u};t(15),t(19),l[p]?(l[p]("DOMContentLoaded",o,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",i),d[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var b=0},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var i=t("ee"),o=t(24),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,i){function nrWrapper(){var r,a,c,s;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,i],c])}u(e+"start",[r,a,i],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,i,o){i||(i="");var a,c,s,f="-"===i.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+i:i,o,c))}function u(n,r,i){if(!s||e){var o=s;s=!0;try{t.emit(n,r,i,e)}catch(a){l([a,n,r,i])}s=o}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var i in t)c.call(t,i)&&(e[i]=t[i]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=i),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,12,4,3]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","applicationID":"3343327","applicationTime":1994,"beacon":"bam.nr-data.net","queueTime":1,"transactionName":"NQQGYUZWDUNSVUMPWQxOIkBaVBdZXFgYClsRTwBfVVkEX1JGRxUYAQ4RR0dSFFFBUxkQXwcWFxtCXgZHQAxFA1gGBBZqTFUPX1Bd","atts":"GUMRFw5MQUhRaUIVUxA+F0FVQwYeVFNDOVsDDx0bVlsMU1hFaBRTExQBRkBSBxIJAxtEVxIIO1ZYXgZeRxQNRHMGGTZQR0MiQFp1Ww9TDBVGGRZFBkFGU0QSaRcSAUdrVgRVXUIVXBQvDh5cWFsCHwYYB0YeNQgKUVtAEBB9YhdQGFNaRGJdWVUECBZPUAJLQSVFRFsGZ1ZUfA9CTVRXAhoEVRAbfX8yey5NRFldXAYQdFNUDVlLQSddRlgOVRwBBkgGTFJRAgwZWggTZVYAVxAISwAHAE0DBRQbREQHEBFQR0M8UUZCXzlCGxEBalNCBkNAFA1ERQcSF1xbWU5fQRtYEl4HE0YZFkUGQUZTRBJpEAQCUEZSERIJFF8SQhISXhobWwZRQVheCFFMBABNGlgRVxwUG0REBxARUEdDPEVAU0U5XwZDXgcABFoGAwAHShQGBBRHUVQCRFZSaBVTFj4HQEdDDF1sW1ISRAsCRg9ARRZVHxRPBGkXEgFHa0QXUUdTGQFTFj4JVFpOTVNSWlsVFFhQSBdGUhJFVkVDOVcXFQxQWkMKU1JCUgJpFxIBR2tRDEVdUmgPWD0MDVFQWwZHUkRSRAxAERZaV1IQQ2xEUhdDBxIQFxgVCUdHaV4VaQMSHVhZUhdCWlUVXFADDRdQGBUbUmxDRANEPRIQVEBSTVdWQmgLVwwYSlFBRQJEWllZRAxQT10CAAJSAAIPBV4BU1FdBgwbQVNcUlI5WRUPAUdrRwJEW2laCVIXDQEXDhUPXUAYUwxXDAYLVERHEB5QWUIURQcWBUdRGRVZVkFESEALBBNGFhtBQlZHQgNFFj4OQkBoAF9cXV4DFFhDClpAGhFVQkNSFUIHBUYZFl0URGxTTxZfEAQXal1ZQQoAAAdWGkACC1FRaAxHXVNFRAxAEQhUQFEMQl4bQwhaQBwZ","agent":"","licenseKey":"1beac94c95"}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <title>
+
+ SoftConst1x Courseware | edX
+</title>
+
+
+  
+
+  <script type="text/javascript" src="./djangojs.2623d59dd64d.js.download"></script>
+  <script type="text/javascript" src="./ie11_find_array.bd1c6dc7a133.js.download"></script>
+
+  <link rel="icon" type="image/x-icon" href="https://prod-edx-edxapp-assets.edx-cdn.org/static/edx.org/images/favicon.9028de6ff678.ico">
+
+  
+  
+
+    <link href="./lms-style-vendor.a44d8153e6e2.css" rel="stylesheet" type="text/css">
+
+
+
+    
+  
+
+    <link href="./lms-main-v1.921917dd047c.css" rel="stylesheet" type="text/css">
+
+
+
+
+    
+    
+<script type="text/javascript" src="./lms-main_vendor.3c3c9a2604d6.js.download" charset="utf-8"></script>
+
+
+    
+    
+<script type="text/javascript" src="./lms-application.0e3fae472a20.js.download" charset="utf-8"></script>
+
+
+
+  
+    
+    
+    <script type="text/javascript" src="./commons.e60779c4dc8570253e39.e7b5cb137c40.js.download"></script>
+
+
+
+  <script>
+    window.baseUrl = "https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="./require-config.38226099c6ad.js.download"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/dateutil_factory': 'js/dateutil_factory.be68acdff619',
+'js/views/message_banner': 'js/views/message_banner.91290dbe25ba',
+'hls': 'common/js/vendor/hls.8f15a0109b05',
+'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.7f46663f97b4',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+'moment': 'common/js/vendor/moment-with-locales.43ec67e44612',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.d5f10bc65ed0',
+'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.36cfa4c5d0f2',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+
+  
+
+    <link href="./lms-style-course-vendor.dc9629c68006.css" rel="stylesheet" type="text/css">
+
+
+
+
+  
+
+    <link href="./lms-course.d9d4811036b4.css" rel="stylesheet" type="text/css">
+
+
+
+
+  
+
+    <link href="./lms-style-student-notes.a35233ec9b00.css" rel="stylesheet" type="text/css">
+
+
+
+
+<script type="text/javascript" src="./jquery.autocomplete.3bd10d7510d2.js.download" async=""></script>
+<script type="text/javascript" src="./tooltip_manager.da362490e199.js.download" async=""></script>
+
+<link href="./jquery.autocomplete.efeb242dd532.css" rel="preload" type="text/css">
+  
+
+  <!--<base target="_parent">--><base href="." target="_parent">
+
+  
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    {"course_key_fields": {"course": "SoftConst1x", "run": "3T2017", "org": "UBCx"}, "has_non_audit_enrollments": null, "partition_groups": null, "forum_roles": null, "course_end": null, "user_id": 24396060, "dynamic_upgrade_deadline": null, "course_id": "course-v1:UBCx+SoftConst1x+3T2017", "course_upgrade_deadline": null, "schedule_start": null, "enrollment_time": null, "email": "mr.jorden.smit@gmail.com", "course_duration": null, "username": "EliyahuSanti", "course_start": null, "upgrade_link": null, "pacing_type": null, "program_key_fields": null, "enrollment_mode": null, "has_staff_access": null, "upgrade_price": null, "audit_access_deadline": null}
+</script>
+
+  
+
+  
+
+<script src="./1743970571.js.download"></script>
+
+  
+
+
+<!-- begin Segment -->
+<script type="text/javascript">
+  // Asynchronously load Segment's analytics.js library
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+  analytics.load("DxfS1h06K5HA7CZDMzmsmuni8JBLmI9u");
+  analytics.page();
+  }}();
+  // Note: user tracking moved to segment-io-footer.html
+</script>
+<!-- end Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+    <meta name="google-site-verification" content="_mipQ4AtZQDNmbtOkwehQDOgCxUUV2fb_C0b6wbiRHY">
+
+  <meta name="openedx-release-line" content="master">
+
+
+
+
+    <script type="text/javascript">
+        (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+        branch.init('key_test_amtw27wsxA2wo5cy7NTROenatBhky0ZU');
+    </script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/edxnotes/views/notes_visibility_factory.fab487923921.js?raw" src="./notes_visibility_factory.fab487923921.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/dateutil_factory.be68acdff619.js?raw" src="./dateutil_factory.be68acdff619.js.download"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="ltr view-in-course view-courseware courseware  lang_en view-in-mfe"><div id="MathJax_Message" style="display: none;"></div>
+
+
+<div id="page-prompt"></div>
+    
+    <a class="nav-skip sr-only sr-only-focusable" href="https://courses.edx.org/xblock/block-v1:UBCx+SoftConst1x+3T2017+type@vertical+block@b8fb5cd506724038b1fe18ee6e4367b2?show_title=0&amp;show_bookmark_button=0&amp;format=Final%20Project#main">Skip to main content</a>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content" dir="ltr">
+      
+
+
+
+
+
+
+
+
+<script type="text/template" id="image-modal-tpl">
+    <div class="wrapper-modal wrapper-modal-image">
+  <section class="image-link">
+    <%= smallHTML%>
+    <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+      <span class="label">
+        <span class="icon fa fa-arrows-alt fa-large" aria-hidden="true"></span> <%- gettext("Fullscreen") %>
+      </span>
+    </a>
+  </section>
+
+  <section class="image-modal">
+    <section class="image-content">
+      <div class="image-wrapper">
+        <img alt="<%= largeALT %>, <%- gettext('Large') %>" src="<%= largeSRC %>" />
+      </div>
+
+      <a href="#" class="modal-ui-icon action-close" role="button">
+        <span class="label">
+          <span class="icon fa fa-remove fa-large" aria-hidden="true"></span> <%- gettext("Close") %>
+        </span>
+      </a>
+
+      <ul class="image-controls">
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-plus fa-large" aria-hidden="true"></span> <%- gettext("Zoom In") %>
+            </span>
+          </a>
+        </li>
+
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-minus fa-large" aria-hidden="true"></span> <%- gettext("Zoom Out") %>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+
+</script>
+
+
+
+
+
+
+
+<div class="course-wrapper chromeless">
+  <section class="course-content" id="course-content" data-enable-completion-on-view-service="false" style="display: block; width: auto; margin: 0;">
+      <main id="main" tabindex="-1" aria-label="Content">
+                    <div class="course-expiration-message"><strong>Audit Access Expires <span class="localized-datetime" data-format="shortDate" data-datetime="2020-10-23" data-language="en">Oct 23, 2020</span></strong><br>You lose all access to this course, including your progress, on <span class="localized-datetime" data-format="shortDate" data-datetime="2020-10-23" data-language="en">Oct 23, 2020</span>.<br>Upgrade by <span class="localized-datetime" data-format="shortDate" data-datetime="2021-12-21" data-language="en">Dec 21, 2021</span> to get unlimited access to the course as long as it exists on the site. <a id="FBE_banner" href="https://ecommerce.edx.org/basket/add/?sku=B7D4087">Upgrade now<span class="sr-only"> to retain access past <span class="localized-datetime" data-format="shortDate" data-datetime="2020-10-23" data-language="en">Oct 23, 2020</span></span></a></div>
+        
+<div class="xblock xblock-student_view xblock-student_view-vertical xblock-initialized" data-has-score="False" data-graded="True" data-runtime-version="1" data-course-id="course-v1:UBCx+SoftConst1x+3T2017" data-block-type="vertical" data-runtime-class="LmsRuntime" data-init="VerticalStudentView" data-request-token="db4e72520c8611ebb9f20e4b398dd7a3" data-usage-id="block-v1:UBCx+SoftConst1x+3T2017+type@vertical+block@b8fb5cd506724038b1fe18ee6e4367b2">
+  
+
+
+
+
+
+
+
+
+
+<div class="vert-mod">
+    <div class="vert vert-0" data-id="block-v1:UBCx+SoftConst1x+3T2017+type@html+block@f857f63c283f47c6b10ae79e6a3b23d5">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-has-score="False" data-graded="True" data-runtime-version="1" data-course-id="course-v1:UBCx+SoftConst1x+3T2017" data-block-type="html" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-request-token="db4e72520c8611ebb9f20e4b398dd7a3" data-usage-id="block-v1:UBCx+SoftConst1x+3T2017+type@html+block@f857f63c283f47c6b10ae79e6a3b23d5">
+  
+  
+
+
+
+
+
+
+<div id="edx-notes-wrapper-237718098459361126353801427338786720553" class="edx-notes-wrapper"><span class="edx-notes-focus-grabber" tabindex="-1"></span><div class="annotator-wrapper">
+    <div class="edx-notes-wrapper-content"><h3>Last Chance to Sign Up for Verified</h3>
+<p>If you are interested in pursuing a verified certificate in this course, or the entire Software Development MicroMasters program, sign up now, before completing the final project! Verified learners get access to a different version of the final project with staff grading, as well as all the other benefits highlighted on the previous page. Learners that choose to sign up for verified after this point will have to resubmit the final project.&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td style="padding: 5px 8px 5px 8px; -webkit-border-radius: 3px; border-radius: 3px;" bgcolor="#127eb1" align="center"><a href="http://bit.ly/2vGvbVf" target="_blank" style="font-size: 24px; font-weight: normal; color: #ffffff; text-decoration: none; display: inline-block;">Sign Up for a Verified Certificate</a></td>
+</tr>
+</tbody>
+</table></div>
+<div class="annotator-outer annotator-viewer annotator-hide"><ul class="annotator-widget annotator-listing" tabindex="-1"></ul></div><div class="annotator-outer annotator-editor annotator-hide"><form class="annotator-widget" tabindex="-1"><ul class="annotator-listing"><li class="annotator-item"><textarea id="annotator-field-0" placeholder="Comments…"></textarea></li><li class="annotator-item"><input id="annotator-field-1" placeholder="Add some tags here…"></li></ul><div class="annotator-controls"><button class="annotator-save">Save<span class="sr">Note</span></button><button class="annotator-cancel">Cancel<span class="sr">Note</span></button></div></form></div><div class="annotator-adder" style="display: none;"><button>Annotate</button></div></div></div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/js/edxnotes/views/notes_visibility_factory.fab487923921.js?raw'], function () {
+          require(['js/edxnotes/views/notes_visibility_factory'], function (NotesVisibilityFactory) {
+            
+    var element = document.getElementById('edx-notes-wrapper-237718098459361126353801427338786720553');
+    NotesVisibilityFactory.VisibilityDecorator.factory(element, {"token": "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ICJtci5qb3JkZW4uc21pdEBnbWFpbC5jb20iLCAiaXNzIjogImh0dHBzOi8vY291cnNlcy5lZHgub3JnL29hdXRoMiIsICJnaXZlbl9uYW1lIjogIiIsICJuYW1lIjogIklseWEgU29rb2xvdiIsICJwcmVmZXJyZWRfdXNlcm5hbWUiOiAiRWxpeWFodVNhbnRpIiwgImlzX3Jlc3RyaWN0ZWQiOiBmYWxzZSwgImV4cCI6IDE2MDI1MDk0OTEsICJlbWFpbF92ZXJpZmllZCI6IHRydWUsICJzdWIiOiAiMWQwOTUzMzNlMGRlYjFmNGIxYTEwNTI2NjNlMjM4NDgiLCAic2NvcGVzIjogWyJlbWFpbCIsICJwcm9maWxlIl0sICJhZG1pbmlzdHJhdG9yIjogZmFsc2UsICJhdWQiOiAiYjQxODJkNWY0N2RmYjE1YWNmMWYiLCAic3VwZXJ1c2VyIjogZmFsc2UsICJmYW1pbHlfbmFtZSI6ICIiLCAiZmlsdGVycyI6IFtdLCAiaWF0IjogMTYwMjUwNTg5MSwgInZlcnNpb24iOiAiMS4yLjAifQ.HEJWPP-QnXt37jC8iyZPRh7xjCbhfStZE9U115upUyc", "endpoint": "https://prod-edx-notes.edx.org/api/v1/", "debug": false, "tokenUrl": "/courses/course-v1:UBCx+SoftConst1x+3T2017/edxnotes/token/", "user": "1d095333e0deb1f4b1a1052663e23848", "usageId": "block-v1:UBCx+SoftConst1x+3T2017+type@html+block@f857f63c283f47c6b10ae79e6a3b23d5", "courseId": "course-v1:UBCx+SoftConst1x+3T2017", "eventStringLimit": 8333.333333333334}, true);
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+</div>
+
+    </div>
+    <div class="vert vert-1" data-id="block-v1:UBCx+SoftConst1x+3T2017+type@html+block@243da3db59ef4c75b806554e0e82db8d">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-has-score="False" data-graded="True" data-runtime-version="1" data-course-id="course-v1:UBCx+SoftConst1x+3T2017" data-block-type="html" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-request-token="db4e72520c8611ebb9f20e4b398dd7a3" data-usage-id="block-v1:UBCx+SoftConst1x+3T2017+type@html+block@243da3db59ef4c75b806554e0e82db8d">
+  
+  
+
+
+
+
+
+
+<div id="edx-notes-wrapper-150683629670377334065151931961345707239" class="edx-notes-wrapper"><span class="edx-notes-focus-grabber" tabindex="-1"></span><div class="annotator-wrapper">
+    <div class="edx-notes-wrapper-content"><h1 dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 18pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #6fa8dc; background-color: transparent; font-weight: bold; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Welcome to the Final Project!</span></h1>
+<p>It's time to test your design and programming skills by extending the SimpleDrawingPlayer application. &nbsp;Right now, the application can only draw rectangles that make a certain sound. &nbsp;Your task is simple: Add an additional tool (and all its underlying functionality) to make an Oval tool that plays a different sound! &nbsp;You can read about how to make&nbsp;different midi sounds here: <a href="https://www.midi.org/specifications/item/gm-level-1-sound-set" target="[object Object]">https://www.midi.org/specifications/item/gm-level-1-sound-set</a>.</p>
+<p><strong>You will need to:</strong></p>
+<ul>
+<li>add a button to the tool bar, by examining how it's currently done for all the other buttons, and then duplicating that functionality.</li>
+<li>add a tool class that implements&nbsp;the new button by looking at how the ShapeTool class works</li>
+<li>add a class that implements the new shape by looking at how the Shape class works</li>
+<li>think about how to reduce duplication in your system using subclassing! &nbsp;Thinking about subclassing up front might save some effort because there's lots of good reusable stuff in the ShapeTool and Shape classes! &nbsp;We will be looking for a&nbsp;well designed solution!</li>
+</ul>
+<p><strong><a href="https://github.com/UBCx-Software-Construction/SimpleDrawingPlayer-starter" target="[object Object]">Click Here to download the starter from the GitHub</a></strong>. It's very similar to the version of the program you've seen before, but we've changed a few things to&nbsp;help you along the way. Also notice that we've provided the code for one method you might need at near the bottom of this page. &nbsp;</p></div>
+<div class="annotator-outer annotator-viewer annotator-hide"><ul class="annotator-widget annotator-listing" tabindex="-1"></ul></div><div class="annotator-outer annotator-editor annotator-hide"><form class="annotator-widget" tabindex="-1"><ul class="annotator-listing"><li class="annotator-item"><textarea id="annotator-field-2" placeholder="Comments…"></textarea></li><li class="annotator-item"><input id="annotator-field-3" placeholder="Add some tags here…"></li></ul><div class="annotator-controls"><button class="annotator-save">Save<span class="sr">Note</span></button><button class="annotator-cancel">Cancel<span class="sr">Note</span></button></div></form></div><div class="annotator-adder" style="display: none;"><button>Annotate</button></div></div></div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/js/edxnotes/views/notes_visibility_factory.fab487923921.js?raw'], function () {
+          require(['js/edxnotes/views/notes_visibility_factory'], function (NotesVisibilityFactory) {
+            
+    var element = document.getElementById('edx-notes-wrapper-150683629670377334065151931961345707239');
+    NotesVisibilityFactory.VisibilityDecorator.factory(element, {"token": "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ICJtci5qb3JkZW4uc21pdEBnbWFpbC5jb20iLCAiaXNzIjogImh0dHBzOi8vY291cnNlcy5lZHgub3JnL29hdXRoMiIsICJnaXZlbl9uYW1lIjogIiIsICJuYW1lIjogIklseWEgU29rb2xvdiIsICJwcmVmZXJyZWRfdXNlcm5hbWUiOiAiRWxpeWFodVNhbnRpIiwgImlzX3Jlc3RyaWN0ZWQiOiBmYWxzZSwgImV4cCI6IDE2MDI1MDk0OTEsICJlbWFpbF92ZXJpZmllZCI6IHRydWUsICJzdWIiOiAiMWQwOTUzMzNlMGRlYjFmNGIxYTEwNTI2NjNlMjM4NDgiLCAic2NvcGVzIjogWyJlbWFpbCIsICJwcm9maWxlIl0sICJhZG1pbmlzdHJhdG9yIjogZmFsc2UsICJhdWQiOiAiYjQxODJkNWY0N2RmYjE1YWNmMWYiLCAic3VwZXJ1c2VyIjogZmFsc2UsICJmYW1pbHlfbmFtZSI6ICIiLCAiZmlsdGVycyI6IFtdLCAiaWF0IjogMTYwMjUwNTg5MSwgInZlcnNpb24iOiAiMS4yLjAifQ.HEJWPP-QnXt37jC8iyZPRh7xjCbhfStZE9U115upUyc", "endpoint": "https://prod-edx-notes.edx.org/api/v1/", "debug": false, "tokenUrl": "/courses/course-v1:UBCx+SoftConst1x+3T2017/edxnotes/token/", "user": "1d095333e0deb1f4b1a1052663e23848", "usageId": "block-v1:UBCx+SoftConst1x+3T2017+type@html+block@243da3db59ef4c75b806554e0e82db8d", "courseId": "course-v1:UBCx+SoftConst1x+3T2017", "eventStringLimit": 8333.333333333334}, true);
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+</div>
+
+    </div>
+    <div class="vert vert-2" data-id="block-v1:UBCx+SoftConst1x+3T2017+type@html+block@e66299d7b6ce427c9a95894377891225">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-has-score="False" data-graded="True" data-runtime-version="1" data-course-id="course-v1:UBCx+SoftConst1x+3T2017" data-block-type="html" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-request-token="db4e72520c8611ebb9f20e4b398dd7a3" data-usage-id="block-v1:UBCx+SoftConst1x+3T2017+type@html+block@e66299d7b6ce427c9a95894377891225">
+  
+  
+
+
+
+
+
+
+<div id="edx-notes-wrapper-144760270567061922031878232609055986353" class="edx-notes-wrapper"><span class="edx-notes-focus-grabber" tabindex="-1"></span><div class="annotator-wrapper">
+    <div class="edx-notes-wrapper-content"><p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: bold; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Play around and make a mess first, break the code and try to fix it. But if that's taking too long, you might want to follow these steps....</span></p>
+<h1 dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 18pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #6fa8dc; background-color: transparent; font-weight: bold; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Your starting point:</span></h1>
+<p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: Verdana; color: #3c3c3c; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><img src="./pasted image 0.png" width="713" height="69" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);"></span></p>
+<h1 dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 18pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #6fa8dc; background-color: transparent; font-weight: bold; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">A: GET OVAL WORKING</span></h1>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: bold; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">STEP 1: SEPARATE RECTANGLE FROM SHAPE:</span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><img src="./pasted image 0(1).png" width="923" height="115" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);"></span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;"><span style="font-size: 12pt; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">First, begin by identifying Rectangle specific data and behaviour from inside Shape, and moving it into a new Rectangle class. &nbsp;Keep all field definitions in Shape, but any fields that are used in Rectangle will need to have their visibility changed from private to protected. &nbsp;Some fields will need to be re-initialised in the Rectangle constructor: think carefully about which ones to re-initialise. &nbsp;Override any method that has rectangle-specific behaviour inside Rectangle. &nbsp;Make Shape abstract, and make the overridden methods abstract if possible. &nbsp;Rectangle should extend Shape. &nbsp;Then you'll need to chase down all the places where a Shape is instantiated, and change those to Rectangle instantiations (the Shape </span><span style="font-size: 12pt; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: italic; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">declarations</span><span style="font-size: 12pt; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"> can and should stay the same!). &nbsp;</span></span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">You may now have broken your Drawing Player. &nbsp;Work to get it working again with the Rectangle in its new position. &nbsp;Once you've got a working system again, you're ready to tackle changing the tool bar!</span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: bold; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">STEP 2: GET AN OVAL CLASS WORKING:</span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><img src="./pasted image 0(2).png" width="1018" height="113" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);"></span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Duplicate the Rectangle class and call it Oval (Oval should also extend Shape). &nbsp;Change the parts of the Oval class that need to change to make the shape produced be an Oval. &nbsp;The contains(Point) method is too complicated for this course, so we have provided code you can use for those methods. &nbsp;Go into the ShapeTool class and instead of instantiating a new Rectangle, instantiate a new Oval. &nbsp;Re-run the tool -- Ovals should appear! Customize away, overriding the <strong>instrument that’s played, and the color that’s displayed</strong>.</span></p>
+<h1 dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 18pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #6fa8dc; background-color: transparent; font-weight: bold; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">B: GET OVAL TOOL WORKING</span></h1>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: bold; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">STEP 1: SEPARATE RECTANGLETOOL FROM SHAPETOOL</span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Now do the same again except for the tools... Add a new class, RectangleTool, and have it extend ShapeTool. &nbsp;&nbsp;Override all the necessary behaviour and data. &nbsp;For instance, you will want to change the text on the tool in the RectangleTool class to say "Rectangle" instead of “Shape”. &nbsp;&nbsp;</span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><img src="./pasted image 0(3).png" width="1060" height="196" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);"></span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Make the ShapeTool an abstract class, then chase down the compilation error to show you where to make the instantiation of the ShapeTool variable be a RectangleTool instance. &nbsp;Make the overridden methods abstract. &nbsp;This will help you when you’re implementing your OvalTool class. &nbsp;Keep going until your changes are reflected properly in the UI. &nbsp;</span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: bold; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">STEP 2: MAKE AN OVALTOOL CLASS</span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Duplicate the RectangleTool class and call it OvalTool. &nbsp;Change the necessary behaviour so now it looks like an "Oval tool". Make sure the Shape is instantiated as an Oval; change the label so it says “Oval”; replace any Rectangle-specific tool behaviour with Oval-specific behaviour. &nbsp;</span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><img src="./pasted image 0(4).png" width="926" height="376" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);"></span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #3c3c3c; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Change the ShapeTool variable so that it is instantiated as an OvalTool. &nbsp;Re-run the UI and now Ovals should appear when you run the Oval Tool (but now the Rectangle Tool will have disappeared). &nbsp;&nbsp;</span></p>
+<h1 dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 18pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #6fa8dc; background-color: transparent; font-weight: bold; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">C: GET BOTH TOOLS WORKING SIMULTANEOUSLY</span></h1>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><img src="./pasted image 0(5).png" width="922" height="346" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);"></span></p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 12pt; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Go into the InitializeGraphics method inside DrawingEditor and find where tools are added (the method name is pretty obvious). Duplicate the code that instantiates the ShapeTool and adds it to the tools list. &nbsp;You'll need to change the variable's name, so there are now two tools: rectangleTool (instantiated as a RectangleTool) and ovalTool (instantiated as an OvalTool). &nbsp;&nbsp;Now you should see two tools in the UI. &nbsp;Keep going until they are both there! &nbsp;</span></p></div>
+<div class="annotator-outer annotator-viewer annotator-hide"><ul class="annotator-widget annotator-listing" tabindex="-1"></ul></div><div class="annotator-outer annotator-editor annotator-hide"><form class="annotator-widget" tabindex="-1"><ul class="annotator-listing"><li class="annotator-item"><textarea id="annotator-field-4" placeholder="Comments…"></textarea></li><li class="annotator-item"><input id="annotator-field-5" placeholder="Add some tags here…"></li></ul><div class="annotator-controls"><button class="annotator-save">Save<span class="sr">Note</span></button><button class="annotator-cancel">Cancel<span class="sr">Note</span></button></div></form></div><div class="annotator-adder" style="display: none;"><button>Annotate</button></div></div></div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/js/edxnotes/views/notes_visibility_factory.fab487923921.js?raw'], function () {
+          require(['js/edxnotes/views/notes_visibility_factory'], function (NotesVisibilityFactory) {
+            
+    var element = document.getElementById('edx-notes-wrapper-144760270567061922031878232609055986353');
+    NotesVisibilityFactory.VisibilityDecorator.factory(element, {"token": "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ICJtci5qb3JkZW4uc21pdEBnbWFpbC5jb20iLCAiaXNzIjogImh0dHBzOi8vY291cnNlcy5lZHgub3JnL29hdXRoMiIsICJnaXZlbl9uYW1lIjogIiIsICJuYW1lIjogIklseWEgU29rb2xvdiIsICJwcmVmZXJyZWRfdXNlcm5hbWUiOiAiRWxpeWFodVNhbnRpIiwgImlzX3Jlc3RyaWN0ZWQiOiBmYWxzZSwgImV4cCI6IDE2MDI1MDk0OTEsICJlbWFpbF92ZXJpZmllZCI6IHRydWUsICJzdWIiOiAiMWQwOTUzMzNlMGRlYjFmNGIxYTEwNTI2NjNlMjM4NDgiLCAic2NvcGVzIjogWyJlbWFpbCIsICJwcm9maWxlIl0sICJhZG1pbmlzdHJhdG9yIjogZmFsc2UsICJhdWQiOiAiYjQxODJkNWY0N2RmYjE1YWNmMWYiLCAic3VwZXJ1c2VyIjogZmFsc2UsICJmYW1pbHlfbmFtZSI6ICIiLCAiZmlsdGVycyI6IFtdLCAiaWF0IjogMTYwMjUwNTg5MSwgInZlcnNpb24iOiAiMS4yLjAifQ.HEJWPP-QnXt37jC8iyZPRh7xjCbhfStZE9U115upUyc", "endpoint": "https://prod-edx-notes.edx.org/api/v1/", "debug": false, "tokenUrl": "/courses/course-v1:UBCx+SoftConst1x+3T2017/edxnotes/token/", "user": "1d095333e0deb1f4b1a1052663e23848", "usageId": "block-v1:UBCx+SoftConst1x+3T2017+type@html+block@e66299d7b6ce427c9a95894377891225", "courseId": "course-v1:UBCx+SoftConst1x+3T2017", "eventStringLimit": 8333.333333333334}, true);
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+</div>
+
+    </div>
+    <div class="vert vert-3" data-id="block-v1:UBCx+SoftConst1x+3T2017+type@html+block@53ae8349a649444da9ed45c1c0e01924">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-has-score="False" data-graded="True" data-runtime-version="1" data-course-id="course-v1:UBCx+SoftConst1x+3T2017" data-block-type="html" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-request-token="db4e72520c8611ebb9f20e4b398dd7a3" data-usage-id="block-v1:UBCx+SoftConst1x+3T2017+type@html+block@53ae8349a649444da9ed45c1c0e01924">
+  
+  
+
+
+
+
+
+
+<div id="edx-notes-wrapper-71298120153211999286569132010858744675" class="edx-notes-wrapper"><span class="edx-notes-focus-grabber" tabindex="-1"></span><div class="annotator-wrapper">
+    <div class="edx-notes-wrapper-content"><h1 dir="ltr" style="line-height: 1.38; margin-top: 15pt; margin-bottom: 16pt;"><span style="font-size: 18pt; color: #6fa8dc; background-color: transparent; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Code for Oval.contains(Point)</span></h1>
+<p></p>
+<pre style="color: #000000; font-family: Menlo; font-size: 12pt;"><span style="color: #808080; font-style: italic;">// EFFECTS: return true if this Oval contains the given point p, else return false<br></span><span style="color: #808080; font-style: italic;">//[NOTE TO STUDENTS: don't spend ANY time worrying about<br></span><span style="color: #808080; font-style: italic;">// why this implementation looks the way it does.  The mathematical<br></span><span style="color: #808080; font-style: italic;">// details of how we determine if an oval contains a point are<br></span><span style="color: #808080; font-style: italic;">// not important in the context of this course!]<br></span><span style="color: #808000;">@Override<br></span><span style="color: #000080; font-weight: bold;">public boolean </span>contains(Point p) {<br>    <span style="color: #000080; font-weight: bold;">final double </span>TOL = <span style="color: #0000ff;">1.0e-6</span>;<br>    <span style="color: #000080; font-weight: bold;">double </span>halfWidth = <span style="color: #660e7a; font-weight: bold;">width </span>/ <span style="color: #0000ff;">2.0</span>;<br>    <span style="color: #000080; font-weight: bold;">double </span>halfHeight = <span style="color: #660e7a; font-weight: bold;">height </span>/ <span style="color: #0000ff;">2.0</span>;<br>    <span style="color: #000080; font-weight: bold;">double </span>diff = <span style="color: #0000ff;">0.0</span>;<br><br>    <span style="color: #000080; font-weight: bold;">if </span>(halfWidth &gt; <span style="color: #0000ff;">0.0</span>) {<br>        diff = diff + sqrDiff(<span style="color: #660e7a; font-weight: bold;">x </span>+ halfWidth, p.<span style="color: #660e7a; font-weight: bold;">x</span>) / (halfWidth * halfWidth);<br>    } <span style="color: #000080; font-weight: bold;">else </span><span style="color: #000080;">{</span><span style="color: #000080; font-weight: bold;"><br></span><span style="color: #000080; font-weight: bold;">        </span>diff = diff + sqrDiff(<span style="color: #660e7a; font-weight: bold;">x </span>+ halfWidth, p.<span style="color: #660e7a; font-weight: bold;">x</span>);<br>    }<br>    <span style="color: #000080; font-weight: bold;">if </span>(halfHeight &gt; <span style="color: #0000ff;">0.0</span>) {<br>        diff = diff + sqrDiff(<span style="color: #660e7a; font-weight: bold;">y </span>+ halfHeight, p.<span style="color: #660e7a; font-weight: bold;">y</span>) / (halfHeight * halfHeight);<br>    } <span style="color: #000080; font-weight: bold;">else</span><span style="color: #000080;"> {</span><span style="color: #000080; font-weight: bold;"><br></span><span style="color: #000080; font-weight: bold;">        </span>diff = diff + sqrDiff(<span style="color: #660e7a; font-weight: bold;">y </span>+ halfHeight, p.<span style="color: #660e7a; font-weight: bold;">y</span>);<br>    }<br>    <span style="color: #000080; font-weight: bold;">return  </span>diff &lt;= <span style="color: #0000ff;">1.0 </span>+ TOL;<br>}<br><br><span style="color: #808080; font-style: italic;">// Compute square of difference<br></span><span style="color: #808080; font-style: italic;">// EFFECTS: returns the square of the difference of num1 and num2<br></span><span style="color: #000080; font-weight: bold;">private double </span>sqrDiff(<span style="color: #000080; font-weight: bold;">double </span>num1, <span style="color: #000080; font-weight: bold;">double </span>num2) {<br>    <span style="color: #000080; font-weight: bold;">return </span>(num1 - num2) * (num1 - num2);<br>}</pre></div>
+<div class="annotator-outer annotator-viewer annotator-hide"><ul class="annotator-widget annotator-listing" tabindex="-1"></ul></div><div class="annotator-outer annotator-editor annotator-hide"><form class="annotator-widget" tabindex="-1"><ul class="annotator-listing"><li class="annotator-item"><textarea id="annotator-field-6" placeholder="Comments…"></textarea></li><li class="annotator-item"><input id="annotator-field-7" placeholder="Add some tags here…"></li></ul><div class="annotator-controls"><button class="annotator-save">Save<span class="sr">Note</span></button><button class="annotator-cancel">Cancel<span class="sr">Note</span></button></div></form></div><div class="annotator-adder" style="display: none;"><button>Annotate</button></div></div></div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/js/edxnotes/views/notes_visibility_factory.fab487923921.js?raw'], function () {
+          require(['js/edxnotes/views/notes_visibility_factory'], function (NotesVisibilityFactory) {
+            
+    var element = document.getElementById('edx-notes-wrapper-71298120153211999286569132010858744675');
+    NotesVisibilityFactory.VisibilityDecorator.factory(element, {"token": "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ICJtci5qb3JkZW4uc21pdEBnbWFpbC5jb20iLCAiaXNzIjogImh0dHBzOi8vY291cnNlcy5lZHgub3JnL29hdXRoMiIsICJnaXZlbl9uYW1lIjogIiIsICJuYW1lIjogIklseWEgU29rb2xvdiIsICJwcmVmZXJyZWRfdXNlcm5hbWUiOiAiRWxpeWFodVNhbnRpIiwgImlzX3Jlc3RyaWN0ZWQiOiBmYWxzZSwgImV4cCI6IDE2MDI1MDk0OTEsICJlbWFpbF92ZXJpZmllZCI6IHRydWUsICJzdWIiOiAiMWQwOTUzMzNlMGRlYjFmNGIxYTEwNTI2NjNlMjM4NDgiLCAic2NvcGVzIjogWyJlbWFpbCIsICJwcm9maWxlIl0sICJhZG1pbmlzdHJhdG9yIjogZmFsc2UsICJhdWQiOiAiYjQxODJkNWY0N2RmYjE1YWNmMWYiLCAic3VwZXJ1c2VyIjogZmFsc2UsICJmYW1pbHlfbmFtZSI6ICIiLCAiZmlsdGVycyI6IFtdLCAiaWF0IjogMTYwMjUwNTg5MSwgInZlcnNpb24iOiAiMS4yLjAifQ.HEJWPP-QnXt37jC8iyZPRh7xjCbhfStZE9U115upUyc", "endpoint": "https://prod-edx-notes.edx.org/api/v1/", "debug": false, "tokenUrl": "/courses/course-v1:UBCx+SoftConst1x+3T2017/edxnotes/token/", "user": "1d095333e0deb1f4b1a1052663e23848", "usageId": "block-v1:UBCx+SoftConst1x+3T2017+type@html+block@53ae8349a649444da9ed45c1c0e01924", "courseId": "course-v1:UBCx+SoftConst1x+3T2017", "eventStringLimit": 8333.333333333334}, true);
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+</div>
+
+    </div>
+</div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/js/dateutil_factory.be68acdff619.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform('.localized-datetime');
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+<script>
+    function emit_event(message) {
+        parent.postMessage(message, '*');
+    }
+</script>
+
+</div>
+
+      </main>
+  </section>
+</div>
+    
+
+
+
+
+<div class="wrapper-utility edx-notes-visibility hidden">
+  <span class="action-toggle-message" aria-live="polite"></span>
+  <button class="utility-control utility-control-button action-toggle-notes is-active">
+    <span class="icon fa fa-pencil" aria-hidden="true"></span>
+    <span class="utility-control-label sr">Hide notes</span>
+  </button>
+</div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/js/edxnotes/views/notes_visibility_factory.fab487923921.js?raw'], function () {
+          require(['js/edxnotes/views/notes_visibility_factory'], function (NotesVisibilityFactory) {
+            
+    NotesVisibilityFactory.ToggleVisibilityView(
+        true,
+        '/courses/course\u002Dv1:UBCx+SoftConst1x+3T2017/edxnotes/visibility/',
+        true
+    );
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+
+<script type="text/javascript">
+  (function() {
+    // If this view is rendered in an iframe within the learning microfrontend app
+    // it will report the height of its contents to the parent window when the
+    // document loads, window resizes, or DOM mutates.
+    if (window !== window.parent) {
+      document.body.className += ' view-in-mfe';
+      var lastHeight = window.offsetHeight;
+      var lastWidth = window.offsetWidth;
+      var contentElement = document.getElementById('content');
+
+      function dispatchResizeMessage(event) {
+        // Note: event is actually an Array of MutationRecord objects
+        // when fired from the MutationObserver
+        var eventType = event.type || 'mutate';
+        var newHeight = contentElement.offsetHeight;
+        var newWidth = contentElement.offsetWidth;
+
+        if (eventType !== 'load' && newWidth === lastWidth && newHeight === lastHeight) {
+          return;
+        }
+
+        window.parent.postMessage({
+            type: 'plugin.resize',
+            payload: {
+              width: newWidth,
+              height: newHeight,
+            }
+          }, document.referrer
+        );
+
+        lastHeight = newHeight;
+        lastWidth = newWidth;
+
+        // Within the learning microfrontend the iframe resizes to match the
+        // height of this document and it should never scroll. It does scroll
+        // ocassionally when javascript is used to focus elements on the page
+        // before the parent iframe has been resized to match the content
+        // height. This window.scrollTo is an attempt to keep the content at the
+        // top of the page. See TNL-7094
+        window.scrollTo(0, 0);
+      }
+
+      // Create an observer instance linked to the callback function
+      const observer = new MutationObserver(dispatchResizeMessage);
+
+      // Start observing the target node for configured mutations
+      observer.observe(document.body, { attributes: true, childList: true, subtree: true });
+
+      window.addEventListener('load', dispatchResizeMessage);
+      window.addEventListener('resize', dispatchResizeMessage);
+    }
+  }());
+</script>
+
+      
+    </div>
+
+
+
+  
+  
+  <script type="text/javascript" src="./jquery.scrollTo.525edcc52fe8.js.download" async=""></script>
+  <script type="text/javascript" src="./jquery.flot.d3d45ff0c6a8.js.download" async=""></script>
+
+  
+    
+<script type="text/javascript" src="./lms-courseware.515d666a83a0.js.download" charset="utf-8"></script>
+
+
+
+  
+
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+<script type="text/javascript">
+    // Activating Mathjax accessibility files
+    window.MathJax = {
+        menuSettings: {
+            collapsible: true,
+            autocollapse: false,
+            explorer: true
+        }
+    };
+</script>
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="./MathJax.js.download"></script>
+
+
+  <script type="text/javascript">
+    var $$course_id = "course\u002Dv1:UBCx+SoftConst1x+3T2017";
+  </script>
+
+<script src="./HtmlBlockPreview.03f9c1403f1a2d5dafb3.b8c6b24843f8.js.download" type="application/javascript"></script>
+<script src="./XModuleShim.de80d9757d0d6b3ea255.adce447fc083.js.download" type="application/javascript"></script>
+<script src="./VerticalStudentView.fcf50096b71f56dda0d4.c2ad9003fda0.js.download" type="application/javascript"></script>
+
+
+
+  
+
+
+    <!-- begin segment footer -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            analytics.identify(
+                "24396060",
+                {
+                    email: "mr.jorden.smit@gmail.com",
+                    username: "EliyahuSanti"
+                },
+                {
+                    integrations: {
+                        // Disable MailChimp because we don't want to update the user's email
+                        // and username in MailChimp on every page load. We only need to capture
+                        // this data on registration/activation.
+                        MailChimp: false
+                    }
+                }
+            );
+        });
+    </script>
+    <!-- end segment footer -->
+
+  <script type="text/javascript" src="./noreferrer.aa62a3e70ffa.js.download" charset="utf-8"></script>
+  <script type="text/javascript" src="./navigation.08930e16ab3d.js.download" charset="utf-8"></script>
+  <script type="text/javascript" src="./header.309a1243e175.js.download"></script>
+  
+  <script type="text/javascript" src="./jquery_extend_patch.54dddef28d15.js.download"></script>
+
+
+
+
+<div id="reader-feedback" class="sr" aria-live="polite"></div><div class="tooltip" style="display: none; opacity: 0;"></div><div class="annotator-notice"></div><div class="annotator-notice"></div></body></html>
