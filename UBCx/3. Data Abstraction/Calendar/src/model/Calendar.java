@@ -7,9 +7,9 @@ import java.util.List;
 
 public class Calendar {
 
-    CalendarDate currentDate;
-    String calendarEmail;
-    List<CalendarItem> calendarEntries;
+    private CalendarDate currentDate;
+    private String calendarEmail;
+    private List<CalendarItem> calendarEntries;
 
     public Calendar(CalendarDate currentDate, String email) {
         this.currentDate = currentDate;
