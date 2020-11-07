@@ -1,8 +1,6 @@
 package test;
 
-import model.BookOrder;
-import model.Customer;
-import model.GangesServiceManager;
+import model.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -12,7 +12,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,10 +28,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/GangesSRPStarter/model/DataStorage.java" />
+        <option value="$PROJECT_DIR$/GangesSRPStarter/model/SignUp.java" />
+        <option value="$PROJECT_DIR$/GangesSRPStarter/model/BookSeller.java" />
+        <option value="$PROJECT_DIR$/GangesSRPStarter/model/Server.java" />
+        <option value="$PROJECT_DIR$/GangesSRPStarter/model/GangesServiceManager.java" />
+        <option value="$PROJECT_DIR$/GangesSRPStarter/test/GangesServiceManagerTest.java" />
+        <option value="$PROJECT_DIR$/GangesLSPStarter/model/StandardSizedBook.java" />
+        <option value="$PROJECT_DIR$/GangesLSPStarter/model/OversizedBook.java" />
+        <option value="$PROJECT_DIR$/GangesLSPStarter/model/Book.java" />
+        <option value="$PROJECT_DIR$/GangesLSPStarter/model/Box.java" />
+        <option value="$PROJECT_DIR$/GangesLSPStarter/model/GangesOrderShipper.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
     <option name="width" value="1295" />
     <option name="height" value="953" />
@@ -44,29 +62,27 @@
             <path>
               <item name="design-principles-practice-projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="design-principles-practice-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="GangesSRPStarter" type="462c0819:PsiDirectoryNode" />
+              <item name="GangesLSPStarter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="design-principles-practice-projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="design-principles-practice-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="GangesSRPStarter" type="462c0819:PsiDirectoryNode" />
+              <item name="GangesLSPStarter" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="design-principles-practice-projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="design-principles-practice-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="GangesSRPStarter" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -85,7 +101,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GangesServiceManagerTest">
+  <component name="RunManager" selected="Application.GangesOrderShipper">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -211,22 +227,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="GangesServiceManagerTest.putAndGetNewData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GangesSRPStarter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.GangesServiceManagerTest" />
+      <option name="METHOD_NAME" value="putAndGetNewData" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="design-principles-practice-projects" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -277,11 +297,13 @@
     <list>
       <item itemvalue="Application.GangesOrderShipper" />
       <item itemvalue="JUnit.GangesServiceManagerTest" />
+      <item itemvalue="JUnit.GangesServiceManagerTest.putAndGetNewData" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GangesServiceManagerTest" />
         <item itemvalue="Application.GangesOrderShipper" />
+        <item itemvalue="JUnit.GangesServiceManagerTest" />
+        <item itemvalue="JUnit.GangesServiceManagerTest.putAndGetNewData" />
       </list>
     </recent_temporary>
   </component>
@@ -302,11 +324,35 @@
     <history-entry file="GangesServiceManagerTest - 2017.11.06 at 16h 02m 16s.xml">
       <configuration name="GangesServiceManagerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GangesServiceManagerTest - 2020.10.30 at 15h 36m 57s.xml">
+      <configuration name="GangesServiceManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GangesServiceManagerTest_putAndGetNewData - 2020.10.30 at 15h 39m 16s.xml">
+      <configuration name="GangesServiceManagerTest.putAndGetNewData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GangesServiceManagerTest - 2020.10.30 at 15h 40m 36s.xml">
+      <configuration name="GangesServiceManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GangesServiceManagerTest - 2020.10.30 at 15h 49m 28s.xml">
+      <configuration name="GangesServiceManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GangesServiceManagerTest_putAndGetNewData - 2020.10.30 at 15h 49m 44s.xml">
+      <configuration name="GangesServiceManagerTest.putAndGetNewData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GangesServiceManagerTest_putAndGetNewData - 2020.10.30 at 15h 50m 00s.xml">
+      <configuration name="GangesServiceManagerTest.putAndGetNewData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GangesServiceManagerTest - 2020.10.30 at 15h 50m 19s.xml">
+      <configuration name="GangesServiceManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GangesServiceManagerTest - 2020.10.30 at 16h 15m 24s.xml">
+      <configuration name="GangesServiceManagerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1295" height="953" extended-state="0" />
+    <frame x="0" y="19" width="1024" height="581" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16640502" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21136591" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Nl-Palette" order="3" />
@@ -315,8 +361,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="UI Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329849" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -324,7 +370,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.329849" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32857144" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -341,13 +387,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GangesLSPStarter/model/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -380,17 +419,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GangesSRPStarter/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GangesSRPStarter/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GangesSRPStarter/model/BookOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GangesSRPStarter/model/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GangesSRPStarter/model/BookSeller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GangesSRPStarter/model/DataStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GangesSRPStarter/model/GangesServiceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="52" column="10" selection-start-line="51" selection-start-column="49" selection-end-line="52" selection-end-column="10" />
+          <folding>
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1725#1726#0" expanded="true" />
+            <element signature="e#1848#1849#0" expanded="true" />
+            <element signature="e#1885#1886#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GangesSRPStarter/test/GangesServiceManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="1152">
+          <caret line="78" column="55" lean-forward="true" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GangesLSPStarter/model/Box.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GangesLSPStarter/model/StandardSizedBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding>
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GangesLSPStarter/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GangesLSPStarter/model/GangesOrderShipper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="96">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GangesLSPStarter/model/OversizedBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <element signature="e#1355#1356#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

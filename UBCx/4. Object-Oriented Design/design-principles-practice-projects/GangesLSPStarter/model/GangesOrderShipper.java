@@ -8,11 +8,11 @@ import java.util.List;
  */
 public class GangesOrderShipper {
 
-    private static final double MAX_EXPECTED_SHIPPING = 13.00;
+    private static final double MAX_EXPECTED_SHIPPING = 26.50;
 
     public static void main(String[] args) {
         // Some books that need to be shipped
-        Book b1 = new Book("The Unbearable Lightness of Being John Malkovich", 19.95);
+        Book b1 = new StandardSizedBook("The Unbearable Lightness of Being John Malkovich", 19.95);
         Book b2 = new OversizedBook("The Princess Brideshead Revisited", 29.15);
 
         // Add them to a list so it's easy to iterate through them
@@ -22,15 +22,16 @@ public class GangesOrderShipper {
 
         for (Book b : booksToShip) {
             String thisTitle = b.getTitle();
+            String thisSize = b.getMinBoxSize();
             System.out.printf("Packaging and shipping %s.\n", thisTitle);
 
-            // Package the book in a medium sized box
-            Box box = b.packageBook(new Box("medium"));
+            // Package the book in a %size sized box
+            Box box = b.packageBook(new Box(thisSize));
             double shipping = box.calculateShipping();
             System.out.printf("The book %s is being shipped for %.2f in a %s-sized box.\n",
-                    thisTitle, shipping, "medium");
+                    thisTitle, shipping, thisSize);
 
-            // model.Book is successfully boxed up, so calculate the shipping cost and make sure it's not too expensive
+            // model.StandardSizedBook is successfully boxed up, so calculate the shipping cost and make sure it's not too expensive
             if (shipping > MAX_EXPECTED_SHIPPING) {
                 System.out.printf("WARNING: The shipping for %s is too expensive!\n", thisTitle);
             } else {
