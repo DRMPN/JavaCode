@@ -5,7 +5,7 @@ import model.random.BingoNumber;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Game {
+public class Game extends model.observer_pattern.Subject {
 
     public static final int CARD_SIZE = 25;
     public static final int SIDE_LENGTH = (int) Math.sqrt(CARD_SIZE);
@@ -33,6 +33,7 @@ public class Game {
         for (PlayerCard o : cards) { //NOTE: refactor this line ONLY.
             if (o.getClass().getSimpleName().equals("PlayerCard"))
                 playerCards.add((PlayerCard) o);
+                addObserver(o);
         }
         return playerCards;
     }
@@ -41,6 +42,15 @@ public class Game {
     //EFFECTS: generates the next bingo call and notifies observers
     public void callNext() {
         currentCall = new BingoNumber();
+        notifyObservers();
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (model.observer_pattern.Observer o : getObservers()) {
+            refreshGameOver();
+            o.update(currentCall);
+        }
     }
 
     //TODO: refactor this method
@@ -48,6 +58,7 @@ public class Game {
     //EFFECTS: adds observer to list of observers
     public void addCard(PlayerCard pc) {
         cards.add(pc);
+        addObserver(pc);
     }
 
     //EFFECTS: sets game over to true if one of the players has bingo
