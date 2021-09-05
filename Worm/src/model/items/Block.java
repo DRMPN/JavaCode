@@ -64,17 +64,46 @@ public class Block {
             oldY = newY;
         }
     }
-
     // Transfers head to opposite side when at it the end of game's border
     public void changeSide(Direction headDir) {
         double currentX = this.getX();
         double currentY = this.getY();
 
         switch (headDir) {
-            case LEFT: setBlockPosition(CANVAS_WIDTH - SIDE,currentY); break;
-            case RIGHT: setBlockPosition(SIDE, currentY); break;
-            case UP: setBlockPosition(currentX,CANVAS_HEIGHT - SIDE); break;
-            case DOWN: setBlockPosition(currentX, SIDE); break;
+            case LEFT: setBlockPosition(CANVAS_WIDTH - SIDE,currentY);
+                nearVerticalBorder(currentX); break;
+            case RIGHT: setBlockPosition(SIDE, currentY);
+                nearVerticalBorder(currentX); break;
+            case UP: setBlockPosition(currentX,CANVAS_HEIGHT - SIDE);
+                nearHorizontalBorder(currentY); break;
+            case DOWN: setBlockPosition(currentX, SIDE);
+                nearHorizontalBorder(currentY); break;
+        }
+    }
+
+    public void nearVerticalBorder(double x) {
+        //System.out.println("VERTICAL");
+        //System.out.println(x);
+        if (x == CANVAS_WIDTH - 2 * SIDE) {
+            System.out.println("LEFT");
+            setBlockPosition(250,125);
+        }
+        if (x == 2 * SIDE) {
+            System.out.println("RIGHT");
+            setBlockPosition(250,125);
+        }
+    }
+
+    public void nearHorizontalBorder(double y) {
+        //System.out.println("HORIZONTAL");
+        //System.out.println(y);
+        if (y == CANVAS_HEIGHT - 2 * SIDE) {
+            System.out.println("UP");
+            setBlockPosition(250,125);
+        }
+        if (y == 2 * SIDE) {
+            System.out.println("DOWN");
+            setBlockPosition(250,125);
         }
     }
 

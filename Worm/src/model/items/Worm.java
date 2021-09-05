@@ -41,6 +41,9 @@ public class Worm {
     public void setApple(Apple apple) {
         this.apple = apple;
     }
+    public void setHeadDirection(Direction headDirection) {
+        this.headDirection = headDirection;
+    }
 
     // Decides whether or not worm can move, travels whole worm by every tick
     public void move() {
@@ -67,8 +70,8 @@ public class Worm {
         double xPosition = wormHead.getX();
         double yPosition = wormHead.getY();
 
-        boolean widthCheck = (xPosition >= sideSize) && (xPosition < CANVAS_WIDTH - sideSize);
-        boolean heightCheck = (yPosition >= sideSize) && (yPosition < CANVAS_HEIGHT - sideSize);
+        boolean widthCheck = (xPosition >= 2* sideSize) && (xPosition < CANVAS_WIDTH - sideSize);
+        boolean heightCheck = (yPosition >= 2 * sideSize) && (yPosition < CANVAS_HEIGHT - sideSize);
 
         return widthCheck && heightCheck;
     }
