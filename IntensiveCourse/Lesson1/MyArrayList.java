@@ -1,10 +1,6 @@
 package IntensiveCourse.Lesson1;
 
-import java.util.Collection;
 import java.util.Comparator;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
 
 /**
  * Personal implementation of the ArrayList class. Not thread safe.
@@ -12,7 +8,7 @@ import java.util.ListIterator;
  * @author DRMPN
  * 
  */
-public class MyArrayList<E> implements List<E> {
+public class MyArrayList<E> implements MyList<E> {
 
     private int size = 0;
     private Object[] elementData;
@@ -45,6 +41,7 @@ public class MyArrayList<E> implements List<E> {
      * @param element - element to be appended to this list
      * @return true
      */
+    @Override
     public boolean add(E element) {
         if (ensureCapacity(size)) {
             increaseCapacity(size);
@@ -60,6 +57,7 @@ public class MyArrayList<E> implements List<E> {
      * @param index   - index of the element to add
      * @param element - element to be appended to this list
      */
+    @Override
     public void add(int index, E element) {
         if (ensureCapacity(size)) {
             increaseCapacity(size);
@@ -72,6 +70,7 @@ public class MyArrayList<E> implements List<E> {
     /**
      * Removes all of the elements from this list.
      */
+    @Override
     public void clear() {
         for (int i = 0; i < size; i++) {
             elementData[i] = null;
@@ -85,6 +84,7 @@ public class MyArrayList<E> implements List<E> {
      * @param index - index of the element to return
      * @return Returns the element at the specified position in this list
      */
+    @Override
     public E get(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException();
@@ -102,6 +102,7 @@ public class MyArrayList<E> implements List<E> {
      *         list,
      *         or -1 if this list does not contain the element
      */
+    @Override
     public int indexOf(Object o) {
         for (int i = 0; i < size; i++) {
             if (elementData[i].equals(o)) {
@@ -116,6 +117,7 @@ public class MyArrayList<E> implements List<E> {
      * 
      * @return true if this list contains no elements
      */
+    @Override
     public boolean isEmpty() {
         return size == 0;
     }
@@ -128,6 +130,7 @@ public class MyArrayList<E> implements List<E> {
      * @param index - the index of the element to be removed
      * @return the element previously at the specified position
      */
+    @Override
     public E remove(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException();
@@ -149,6 +152,7 @@ public class MyArrayList<E> implements List<E> {
      * @param o - element to be removed from this list, if present
      * @return true if this list contained the specified element
      */
+    @Override
     public boolean remove(Object o) {
         int index = indexOf(o);
         if (index >= 0) {
@@ -166,6 +170,7 @@ public class MyArrayList<E> implements List<E> {
      * @param element - element to be stored at the specified position
      * @return the element previously at the specified position
      */
+    @Override
     public E set(int index, E element) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException();
@@ -180,6 +185,7 @@ public class MyArrayList<E> implements List<E> {
      * 
      * @return the number of elements in this list
      */
+    @Override
     public int size() {
         return size;
     }
@@ -187,15 +193,17 @@ public class MyArrayList<E> implements List<E> {
     /**
      * Sorts this list.
      */
+    @Override
     public void sort() {
         Sort.quicksort(elementData, 0, size - 1);
     }
 
     /**
-     * Sorts his list using comparator.
+     * Sorts this list using comparator.
      * 
      * @param c - comparator
      */
+    @Override
     public void sort(Comparator<? super E> c) {
         Sort.quicksort(elementData, 0, size - 1, c);
     }

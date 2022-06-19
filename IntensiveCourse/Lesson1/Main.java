@@ -1,6 +1,5 @@
 package IntensiveCourse.Lesson1;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Main {
@@ -46,7 +45,7 @@ public class Main {
         System.out.println(!list.remove((Object) 777));
         System.out.println(list.get(2) == 2);
         System.out.println(list.size() == 5);
-
+        
         // sort integer
         list.clear();
         list.sort();

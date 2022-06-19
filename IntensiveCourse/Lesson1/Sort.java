@@ -45,7 +45,7 @@ public class Sort {
      * @param fromIndex - first index of which to sort
      * @param toIndex   - last index of which to sort
      */
-    public static <E> void quicksort(E[] array, int fromIndex, int toIndex, Comparator<E> c) {
+    public static <E> void quicksort(E[] array, int fromIndex, int toIndex, Comparator<? super E> c) {
         if (fromIndex >= toIndex)
             return;
 
