@@ -16,7 +16,7 @@
                                             <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
                                                 <h2 class="mdl-card__title-text">
                                                     <c:if test="${student != null}"> Edit Student </c:if>
-                                                    <c:if title="${student == null}"> Add New Student </c:if>
+                                                    <c:if test="${student == null}"> Add New Student </c:if>
                                                 </h2>
                                             </div>
                                             <div class="mdl-card__supporting-text">
