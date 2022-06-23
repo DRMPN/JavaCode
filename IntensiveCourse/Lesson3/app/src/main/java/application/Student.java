@@ -1,9 +1,18 @@
 package application;
 
 public class Student {
-    private int id;
-    private String lastName;
-    private String firstName;
+    protected int id;
+    protected String lastName;
+    protected String firstName;
+
+    public Student(int id) {
+        this.id = id;
+    }
+
+    public Student(String lastName, String firstName) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+    }
 
     public Student(int id, String lastName, String firstName) {
         this.id = id;

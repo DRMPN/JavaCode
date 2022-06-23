@@ -6,6 +6,16 @@ import java.util.*;
 
 public class DaoStudent implements StudentDao{
 
+    private DaoStudent() {}
+
+    private static class SingletonHelper {
+        private static final DaoStudent INSTANCE = new DaoStudent();
+    }
+
+    public static DaoStudent getInstance() {
+        return SingletonHelper.INSTANCE;
+    }
+
     @Override
     public Optional<Student> find(String id) throws SQLException {
         int studentId = 0;
@@ -52,15 +62,14 @@ public class DaoStudent implements StudentDao{
 
     @Override
     public boolean save(Student student) throws SQLException {
-        String query = "INSERT INTO students (student_id, last_name, first_name) VALUES (?, ?, ?)";
+        String query = "INSERT INTO students (last_name, first_name) VALUES (?, ?)";
         boolean rowInserted = false;
         
         Connection connection = DataSourceFactory.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(query);
        
-        preparedStatement.setInt(1, student.getId());
+        preparedStatement.setString(1, student.getLastName());
         preparedStatement.setString(2, student.getLastName());
-        preparedStatement.setString(3, student.getLastName());
         rowInserted = preparedStatement.executeUpdate() > 0;
 
         return rowInserted;
