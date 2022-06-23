@@ -59,6 +59,7 @@
                 </div>
                 <script type="text/javascript">
                     function validateForm() {
+                        return true;
                     }
                 </script>
 
