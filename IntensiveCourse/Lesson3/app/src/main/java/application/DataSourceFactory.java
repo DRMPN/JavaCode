@@ -13,10 +13,9 @@ public class DataSourceFactory {
     static {
 
         Properties props = new Properties();
-        props.setProperty("dataSourceClassName", "org.postgresql.ds.PGSimpleDataSource");
+        props.setProperty("dataSourceClassName", "org.postgresql.ds.PGPoolingDataSource");
         props.setProperty("dataSource.user", "haru");
         props.setProperty("dataSource.password", "haru");
-        props.setProperty("dataSource.databaseName", "haru");
 
         config = new HikariConfig(props);
         source = new HikariDataSource(config);
