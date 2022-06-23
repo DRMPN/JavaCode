@@ -69,7 +69,7 @@ public class DaoStudent implements StudentDao{
         PreparedStatement preparedStatement = connection.prepareStatement(query);
        
         preparedStatement.setString(1, student.getLastName());
-        preparedStatement.setString(2, student.getLastName());
+        preparedStatement.setString(2, student.getFirstName());
         rowInserted = preparedStatement.executeUpdate() > 0;
 
         return rowInserted;
