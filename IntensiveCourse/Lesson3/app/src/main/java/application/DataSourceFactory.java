@@ -1,6 +1,7 @@
 package application;
 
 import java.sql.*;
+import java.util.Properties;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -10,10 +11,14 @@ public class DataSourceFactory {
     private static HikariConfig config;
 
     static {
-        config = new HikariConfig();
-        config.setJdbcUrl("jdbc:postgresql://192.168.239.130:5432/haru");
-        config.setUsername("haru");
-        config.setPassword("haru");
+
+        Properties props = new Properties();
+        props.setProperty("dataSourceClassName", "org.postgresql.ds.PGPoolingDataSource");
+        props.setProperty("dataSource.user", "haru");
+        props.setProperty("dataSource.password", "haru");
+        props.setProperty("dataSource.databaseName", "haru");
+
+        config = new HikariConfig(props);
         source = new HikariDataSource(config);
     }
 
