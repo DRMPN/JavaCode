@@ -13,7 +13,7 @@ public class DataSourceFactory {
     static {
 
         Properties props = new Properties();
-        props.setProperty("dataSourceClassName", "org.postgresql.ds.PGPoolingDataSource");
+        props.setProperty("dataSourceClassName", "org.postgresql.ds.PGSimpleDataSource");
         props.setProperty("dataSource.user", "haru");
         props.setProperty("dataSource.password", "haru");
         props.setProperty("dataSource.databaseName", "haru");
