@@ -9,7 +9,7 @@ public class DataSourceFactory {
     private static HikariDataSource source;
     private static HikariConfig config;
 
-    private static String configFile = "../resources/database.properties";
+    private static String configFile = "src/main/resources/database.properties";
 
     static {
         config = new HikariConfig(configFile);
