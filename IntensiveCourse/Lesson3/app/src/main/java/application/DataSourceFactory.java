@@ -9,10 +9,11 @@ public class DataSourceFactory {
     private static HikariDataSource source;
     private static HikariConfig config;
 
-    private static String configFile = "src/main/resources/database.properties";
-
     static {
-        config = new HikariConfig(configFile);
+        config = new HikariConfig();
+        config.setJdbcUrl("jdbc:postgresql://192.168.239.130:5432/haru");
+        config.setUsername("haru");
+        config.setPassword("haru");
         source = new HikariDataSource(config);
     }
 
