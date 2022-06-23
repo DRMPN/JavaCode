@@ -21,6 +21,7 @@
                                                         <th class="mdl-data-table__cell--non-numeric">NO</th>
                                                         <th>Last Name</th>
                                                         <th>First Name</th>
+                                                        <th>Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -40,8 +41,7 @@
                                                             <td>
                                                                 <a
                                                                     href="/students/edit?id=<c:out value='${student.id}' />">Edit</a>
-                                                            </td>
-                                                            <td>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;
                                                                 <a
                                                                     href="/students/delete?id=<c:out value='${student.id}' />">Delete</a>
                                                             </td>
