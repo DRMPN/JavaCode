@@ -1,26 +1,19 @@
 package application;
 
 import java.sql.*;
-import java.util.Properties;
 
-import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 public class DataSourceFactory {
     private static HikariDataSource source;
-    private static HikariConfig config;
 
     static {
-
-        Properties props = new Properties();
-        
-        props.setProperty("dataSourceClassName", "org.postgresql.ds.PGPoolingDataSource");
-        props.setProperty("url", "jdbc:postgresql://192.168.239.130:5432/haru");
-        props.setProperty("dataSource.user", "haru");
-        props.setProperty("dataSource.password", "haru");
-
-        config = new HikariConfig(props);
-        source = new HikariDataSource(config);
+        source = new HikariDataSource();
+        source.setMaximumPoolSize(5);
+        source.setDataSourceClassName("org.postgresql.ds.PGSimpleDataSource");
+        source.addDataSourceProperty("url", "jdbc:postgresql://192.168.239.130:5432/haru");
+		source.addDataSourceProperty("user", "haru");
+		source.addDataSourceProperty("password", "haru");
     }
 
     private DataSourceFactory() {}
