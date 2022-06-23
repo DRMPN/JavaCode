@@ -13,10 +13,9 @@ public class DataSourceFactory {
     static {
 
         Properties props = new Properties();
+        
         props.setProperty("dataSourceClassName", "org.postgresql.ds.PGPoolingDataSource");
-        props.setProperty("serverName", "192.168.239.130");
-        props.setProperty("port", "5432");
-        props.setProperty("dataBaseName", "haru");
+        props.setProperty("url", "jdbc:postgresql://192.168.239.130:5432/haru");
         props.setProperty("dataSource.user", "haru");
         props.setProperty("dataSource.password", "haru");
 
