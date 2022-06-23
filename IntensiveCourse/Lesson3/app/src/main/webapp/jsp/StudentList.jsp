@@ -39,11 +39,11 @@
                                                             </td>
                                                             <td>
                                                                 <a
-                                                                    href="students/edit?id=<c:out value='${student.id}' />">Edit</a>
+                                                                    href="/edit?id=<c:out value='${student.id}' />">Edit</a>
                                                             </td>
                                                             <td>
                                                                 <a
-                                                                    href="students/delete?id=<c:out value='${student.id}' />">Delete</a>
+                                                                    href="/delete?id=<c:out value='${student.id}' />">Delete</a>
                                                             </td>
                                                         </tr>
                                                     </c:forEach>
