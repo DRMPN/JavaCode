@@ -1,4 +1,3 @@
-<%@page import="java.util.Calendar"%>
 <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
         <!-- Title -->
