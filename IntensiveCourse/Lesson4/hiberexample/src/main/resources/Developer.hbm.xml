@@ -5,7 +5,7 @@
 <hibernate-mapping>
     <class name="example.model.Developer" table="hibernate_developers">
         <meta attribute="class-description">
-            This class contains developer's details.
+            This class contains developer details.
         </meta>
         <id name="id" type="int" column="id">
             <generator class="native"/>
