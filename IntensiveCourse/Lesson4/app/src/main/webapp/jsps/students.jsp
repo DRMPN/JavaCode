@@ -14,7 +14,7 @@
                 First Name <input type="text" name="firstName" id="firstName" value="${student.firstName}"><br>
                 Last Name <input type="text" name="lastName" id="lastName" value="${student.lastName}"><br>
                 Age <input type="number" name="age" id="age" value="${student.age}"><br>
-                Program <input type="text" name="program" id="age" value="${student.program}"><br>
+                Program <input type="text" name="program" id="program" value="${student.program}"><br>
                 <input type="submit" value="Add/Edit Student">
             </form>
 
