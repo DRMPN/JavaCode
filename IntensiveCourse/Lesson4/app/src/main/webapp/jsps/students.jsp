@@ -10,7 +10,7 @@
         <body>
             <h2>Add / Edit student</h2>
             <form action="students" method="post">
-                <input type="hidden" name="student" value="${student.studentId}">
+                <input type="hidden" name="studentId" value="${student.studentId}">
                 First Name <input type="text" name="firstName" id="firstName" value="${student.firstName}"><br>
                 Last Name <input type="text" name="lastName" id="lastName" value="${student.lastName}"><br>
                 Age <input type="number" name="age" id="age" value="${student.age}"><br>

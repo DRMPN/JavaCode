@@ -46,7 +46,12 @@ public class StudentsServlet extends HttpServlet {
                 Integer.parseInt(req.getParameter("age")),
                 req.getParameter("program"));
 
-        StudentsRepo.addStudent(student);
+        if (req.getParameter("studentId") == null ) {
+            StudentsRepo.addStudent(student);
+        }
+        else {
+            StudentsRepo.updateStudent(student);
+        }
 
         doGet(req, resp);
     }
