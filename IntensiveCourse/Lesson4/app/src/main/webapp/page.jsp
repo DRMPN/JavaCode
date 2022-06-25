@@ -8,9 +8,9 @@
 </head>
 
 <body>
-    <a href="/app/students">List Students</a>
-    <a href="/app/classes">List Classes</a>
-    <a href="/app/enrollments">List Enrollments</a>
+    <a href="/students">List Students</a>
+    <a href="/classes">List Classes</a>
+    <a href="/enrollments">List Enrollments</a>
 </body>
 
 </html>
