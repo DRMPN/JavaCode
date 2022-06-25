@@ -36,7 +36,7 @@ public class StudentsRepo {
         Session session = HibernateDataSource.getSession();
         Transaction transaction = session.beginTransaction();
 
-        List<Student> list = session.createQuery("FROM students").list();
+        List<Student> list = session.createQuery("FROM Student").list();
 
         transaction.commit();
         session.close();
