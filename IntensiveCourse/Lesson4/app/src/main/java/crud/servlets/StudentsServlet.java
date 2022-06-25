@@ -42,7 +42,7 @@ public class StudentsServlet extends HttpServlet {
 
         Student student = new Student(req.getParameter("firstName"),
                 req.getParameter("lastName"),
-                Integer.parseInt(req.getParameter("age")),
+                Integer.parseInt((String) req.getParameter("age")),
                 req.getParameter("program"));
 
         StudentsRepo.addStudent(student);
