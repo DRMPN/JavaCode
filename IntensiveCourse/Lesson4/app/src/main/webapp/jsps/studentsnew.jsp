@@ -8,8 +8,7 @@
 </head>
 
 <body>
-    <h2>Students</h2>
-    <a href="/app/students/new">Add new student</a>
+    <h2>Add new student</h2>
 </body>
 
 </html>
