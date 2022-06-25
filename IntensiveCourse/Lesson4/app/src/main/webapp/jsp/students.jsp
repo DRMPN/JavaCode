@@ -4,13 +4,11 @@
 <html>
 
 <head>
-    <title>Index</title>
+    <title>Students</title>
 </head>
 
 <body>
-    <a href="/students">List Students</a>
-    <a href="/classes">List Classes</a>
-    <a href="/enrollments">List Enrollments</a>
+    <h2>Students</h2>
 </body>
 
 </html>
