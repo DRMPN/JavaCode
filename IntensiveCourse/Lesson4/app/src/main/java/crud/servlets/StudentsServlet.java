@@ -22,14 +22,14 @@ public class StudentsServlet extends HttpServlet {
         Student student = null;
         List<Student> students = StudentsRepo.listStudents();
 
-        int editid = (req.getParameter("editId") == null) ? 0 : Integer.parseInt(req.getParameter("editId"));
-        int delId = (req.getParameter("delId") == null ? 0 : Integer.parseInt(req.getParameter("delId")));
+        int editId = (req.getParameter("editId") == null ? 0 : Integer.parseInt(req.getParameter("editId")));
+        int deleteId = (req.getParameter("deleteId") == null ? 0 : Integer.parseInt(req.getParameter("deleteId")));
 
-        if (editid > 0) {
+        if (editId > 0) {
             // TODO: update student
         }
-        if (delId > 0) {
-            StudentsRepo.deleteStudent(delId);
+        if (deleteId > 0) {
+            StudentsRepo.deleteStudent(deleteId);
         }
 
         req.setAttribute("student", student);
