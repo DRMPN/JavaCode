@@ -9,7 +9,6 @@
 
 <body>
     <h2>Students</h2>
-    <a href="/app/students/new">Add new student</a>
 </body>
 
 </html>
