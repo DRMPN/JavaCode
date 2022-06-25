@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/classes")
+@WebServlet("/app/classes")
 public class ClassesServlet extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("classes.jsp").forward(req, resp);
+        req.getRequestDispatcher("jsps/classes.jsp").forward(req, resp);
     }
     
 }
