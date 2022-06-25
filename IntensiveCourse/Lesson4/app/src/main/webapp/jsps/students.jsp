@@ -51,9 +51,9 @@
                                 <c:out value="${std.program}" />
                             </td>
                             <td>
-                                <a href="/students?editId=<c:out value='${std.studentId}' />">Edit</a>
+                                <a href="/app/students?editId=<c:out value='${std.studentId}' />">Edit</a>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="/students?deleteId=<c:out value='${std.studentId}' />">Delete</a>
+                                <a href="/app/students?deleteId=<c:out value='${std.studentId}' />">Delete</a>
                             </td>
                         </tr>
                     </c:forEach>
