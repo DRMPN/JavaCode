@@ -54,7 +54,7 @@ public class StudentsServlet extends HttpServlet {
         }
 
         student.setFirstName(req.getParameter("firstName"));
-        student.setFirstName(req.getParameter("lastName"));
+        student.setLastName(req.getParameter("lastName"));
         student.setAge(Integer.parseInt(req.getParameter("age")));
         student.setProgram(req.getParameter("program"));
 
