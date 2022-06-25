@@ -2,7 +2,7 @@
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
         <!DOCTYPE html>
         <html>
-
+         
         <head>
             <title>Students</title>
             <style type="text/css">
@@ -14,11 +14,27 @@
             <h2>Add / Edit student</h2>
             <form action="students" method="post">
                 <input type="hidden" name="studentId" value="${student.studentId}">
-                First Name: <input type="text" name="firstName" id="firstName" value="${student.firstName}"><br>
-                Last Name: <input type="text" name="lastName" id="lastName" value="${student.lastName}"><br>
-                Age: <input type="number" name="age" id="age" value="${student.age}"><br>
-                Program: <input type="text" name="program" id="program" value="${student.program}"><br>
-                <input type="submit" value="Save">
+                <ul>
+                    <li>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" value="${student.firstName}">
+                    </li>
+                    <li>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" value="${student.lastName}">
+                    </li>
+                    <li>
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="age" value="${student.age}">
+                    </li>
+                    <li>
+                        <label for="program">Program:</label>
+                        <input type="text" name="program" id="program" value="${student.program}">
+                    </li>
+                    <li>
+                        <input type="submit" value="Save">
+                    </li>
+                </ul>
             </form>
 
             <h2>All Students</h2>
