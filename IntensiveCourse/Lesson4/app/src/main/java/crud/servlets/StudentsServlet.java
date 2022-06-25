@@ -20,17 +20,18 @@ public class StudentsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         Student student = null;
-        List<Student> students = StudentsRepo.listStudents();
 
         int editId = (req.getParameter("editId") == null ? 0 : Integer.parseInt(req.getParameter("editId")));
         int deleteId = (req.getParameter("deleteId") == null ? 0 : Integer.parseInt(req.getParameter("deleteId")));
 
         if (editId > 0) {
-            // TODO: update student
+            student = StudentsRepo.findStudentById(editId);
         }
         if (deleteId > 0) {
             StudentsRepo.deleteStudent(deleteId);
         }
+
+        List<Student> students = StudentsRepo.listStudents();
 
         req.setAttribute("student", student);
         req.setAttribute("listStudent", students);

@@ -10,6 +10,18 @@ import crud.utility.HibernateDataSource;
 
 public class StudentsRepo {
 
+    public static Student findStudentById(int studentId) {
+        Session session = HibernateDataSource.getSession();
+        Transaction transaction = session.beginTransaction();
+
+        Student student = (Student) session.get(Student.class, studentId);
+        
+        transaction.commit();
+        session.close();
+
+        return student;
+       }
+
     public static int addStudent(Student student) {
         Session session = HibernateDataSource.getSession();
         Transaction transaction = session.beginTransaction();
