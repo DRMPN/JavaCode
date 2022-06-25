@@ -1,11 +1,15 @@
 package crud.model;
 
+import java.util.Set;
+
 public class Student {
     private int studentId;
     private String firstName;
     private String lastName;
     private int age;
     private String program;
+
+    private Set<Class> classes;
 
     public Student() {
     }
@@ -55,6 +59,14 @@ public class Student {
 
     public void setProgram(String program) {
         this.program = program;
+    }
+
+    public Set<Class> getClasses() {
+        return classes;
+    }
+
+    public void setClasses(Set<Class> classes) {
+        this.classes = classes;
     }
 
     @Override

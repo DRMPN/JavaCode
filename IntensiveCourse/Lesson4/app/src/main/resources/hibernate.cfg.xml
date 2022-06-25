@@ -11,7 +11,8 @@
         <property name="hibernate.connection.url">jdbc:postgresql://192.168.239.130:5432/haru</property>
         <property name="hibernate.connection.username">haru</property>
         <property name="hibernate.connection.password">haru</property>
-        <mapping resource="University.hbm.xml"/>
+        <mapping resource="student.hbm.xml"/>
+        <mapping resource="class.hbm.xml"/>
     </session-factory>
 
 </hibernate-configuration>

@@ -13,6 +13,10 @@
         <property name="lastName" column="last_name" type="string"/>
         <property name="age" column="age" type="int"/>
         <property name="program" column="program" type="string"/>
+        <set name="classes" table="enrollments" fetch="select" cascade="all">
+			<key column="student_id" />
+			<many-to-many class="Class" column="class_id" />
+		</set>
     </class>
 
 </hibernate-mapping>
