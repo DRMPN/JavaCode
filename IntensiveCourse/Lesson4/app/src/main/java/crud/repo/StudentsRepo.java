@@ -38,7 +38,7 @@ public class StudentsRepo {
         Session session = HibernateDataSource.getSession();
         Transaction transaction = session.beginTransaction();
 
-        session.merge(student);
+        session.update(student);
 
         transaction.commit();
         session.close();
