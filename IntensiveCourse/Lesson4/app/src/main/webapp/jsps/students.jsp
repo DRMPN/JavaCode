@@ -5,17 +5,20 @@
 
         <head>
             <title>Students</title>
+            <style type="text/css">
+                <%@include file="../css/styles.css" %>
+            </style>
         </head>
 
         <body>
             <h2>Add / Edit student</h2>
             <form action="students" method="post">
                 <input type="hidden" name="studentId" value="${student.studentId}">
-                First Name <input type="text" name="firstName" id="firstName" value="${student.firstName}"><br>
-                Last Name <input type="text" name="lastName" id="lastName" value="${student.lastName}"><br>
-                Age <input type="number" name="age" id="age" value="${student.age}"><br>
-                Program <input type="text" name="program" id="program" value="${student.program}"><br>
-                <input type="submit" value="Add/Edit Student">
+                First Name: <input type="text" name="firstName" id="firstName" value="${student.firstName}"><br>
+                Last Name: <input type="text" name="lastName" id="lastName" value="${student.lastName}"><br>
+                Age: <input type="number" name="age" id="age" value="${student.age}"><br>
+                Program: <input type="text" name="program" id="program" value="${student.program}"><br>
+                <input type="submit" value="Save">
             </form>
 
             <h2>All Students</h2>
