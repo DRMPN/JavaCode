@@ -33,6 +33,7 @@ ul {
 
 form li+li {
     margin-top: 1em;
+    align-items: center;
 }
 
 label {
