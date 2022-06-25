@@ -31,9 +31,9 @@
                             <td><c:out value="${student.age}"/></td>
                             <td><c:out value="${student.program}"/></td>
                             <td>
-                                <a href="/students/edit?id=<c:out value='${student.id}' />">Edit</a>
+                                <a href="/students/edit?id=<c:out value='${student.studentId}' />">Edit</a>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="/students/delete?id=<c:out value='${student.id}' />">Delete</a>
+                                <a href="/students/delete?id=<c:out value='${student.studentId}' />">Delete</a>
                             </td>
                         </tr>
                     </c:forEach>
