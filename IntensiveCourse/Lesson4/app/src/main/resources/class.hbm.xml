@@ -6,7 +6,7 @@
 <hibernate-mapping>
 
     <class name="crud.model.Class" table="classes">
-        <id name="id" type="int" column="class_id" />
+        <id name="classId" type="int" column="class_id" />
 			<generator class="native" />
 		</id>
         <property name="title" type="string" column="title" />
