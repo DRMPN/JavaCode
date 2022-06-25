@@ -13,7 +13,7 @@ public class ClassesServlet extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("classes.jsp").forward(req, resp);
+        req.getRequestDispatcher("jsp/classes.jsp").forward(req, resp);
     }
     
 }
