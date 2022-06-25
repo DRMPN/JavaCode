@@ -41,12 +41,16 @@ public class StudentsServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        boolean update = true;
-        Student student = StudentsRepo.findStudentById(Integer.parseInt(req.getParameter("studentId")));
+        Student student;
+        boolean update;
 
-        if (student == null) {
-            student = new Student();
+        if (req.getParameter("studentId") == "") {
             update = false;
+            student = new Student();
+        }
+        else {
+            update = true;
+            student = StudentsRepo.findStudentById(Integer.parseInt(req.getParameter("studentId")));
         }
 
         student.setFirstName(req.getParameter("firstName"));
