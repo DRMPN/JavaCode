@@ -6,15 +6,15 @@
 <hibernate-mapping>
 
     <class name="crud.model.Class" table="classes">
-        <id name="classId" type="int" column="class_id" />
-			<generator class="native" />
-		</id>
+        <id name = "classId" type = "int" column = "class_id">
+            <generator class="native"/>
+        </id>
         <property name="title" type="string" column="title" />
         <property name="description" type="string" column="description" />
-		<set name="students" table="enrollments" fetch="select" cascade="all">
-			<key column="class_id" />
-			<many-to-many class="Student" column="student_id" />
-		</set>
+        <set name="students" table="enrollments" fetch="select" cascade="all">
+            <key column="class_id" />
+            <many-to-many class="crud.model.Student" column="student_id" />
+        </set>
     </class>
 
 </hibernate-mapping>

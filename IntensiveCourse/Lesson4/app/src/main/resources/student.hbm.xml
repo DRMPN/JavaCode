@@ -15,7 +15,7 @@
         <property name="program" column="program" type="string"/>
         <set name="classes" table="enrollments" fetch="select" cascade="all">
 			<key column="student_id" />
-			<many-to-many class="Class" column="class_id" />
+			<many-to-many class="crud.model.Class" column="class_id" />
 		</set>
     </class>
 
