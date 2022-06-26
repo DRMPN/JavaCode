@@ -5,16 +5,33 @@
 
 <hibernate-mapping>
 
-    <class name="crud.model.Class" table="classes">
-        <id name = "classId" type = "int" column = "class_id">
+    <class name="crud.model.AbstractClass" table="abstract_classes">
+        <id name="classId" type="int" column="class_id">
             <generator class="native"/>
         </id>
-        <property name="title" type="string" column="title" />
-        <property name="description" type="string" column="description" />
-        <set name="students" table="enrollments" fetch="select" cascade="all">
-            <key column="class_id" />
-            <many-to-many class="crud.model.Student" column="student_id" />
-        </set>
+        <discriminator column="type" type="string"></discriminator>
+
+        <property name="title" column="title" type="string" />
+        <property name="description" column="description" type="string" />
+
+        <subclass name="crud.model.Class" discriminator-value="GC">
+            <set name="students" table="enrollments" fetch="select" cascade="all">
+                <key column="class_id" />
+                <many-to-many class="crud.model.Student" column="student_id" />
+            </set>
+        </subclass>
+
+        <subclass name="crud.model.LocationBasedClass" discriminator-value="LBC">
+            <property name="location" column="location" type="string" />
+        </subclass>
+
+        <subclass name="crud.model.PartnershipClass" discriminator-value="PSC">
+            <property name="partner" column="partner" type="string" />
+        </subclass>
+
+        <subclass name="crud.model.PaidClass" discriminator-value="PC">
+            <property name="price" column="price" type="double" />
+        </subclass>
     </class>
 
 </hibernate-mapping>
