@@ -1,9 +1,12 @@
 package crud.model;
 
+import java.util.Set;
+
 public abstract class AbstractClass {
     private int classId;
     private String title;
     private String description;
+    private Set<Student> students;
 
     public AbstractClass() {
     }
@@ -37,9 +40,17 @@ public abstract class AbstractClass {
         this.description = description;
     }
 
-    @Override
-    public String toString() {
-        return "AbstractClass [description=" + description + ", title=" + title + "]";
+    public Set<Student> getStudents() {
+        return students;
     }
 
+    public void setStudents(Set<Student> students) {
+        this.students = students;
+    }
+
+    @Override
+    public String toString() {
+        return "AbstractClass [description=" + description + ", students=" + students + ", title=" + title + "]";
+    }
+    
 }
