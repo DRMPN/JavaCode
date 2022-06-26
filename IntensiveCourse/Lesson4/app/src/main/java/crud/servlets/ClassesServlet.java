@@ -32,7 +32,7 @@ public class ClassesServlet extends HttpServlet{
 
         List<Class> classes = ClassesRepo.listClasses();
 
-        req.setAttribute("class", clazz);
+        req.setAttribute("clazz", clazz);
         req.setAttribute("listClasses", classes);
         req.getRequestDispatcher("jsps/classes.jsp").forward(req, resp);
     }
