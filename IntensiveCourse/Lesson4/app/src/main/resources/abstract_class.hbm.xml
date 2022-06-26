@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="crud.model.AbstractClass" table="classes_tbc">
+        <id name="classId" type="int" column="class_id">
+            <generator class="native"/>
+        </id>
+        <discriminator column="type" type="string"></discriminator> 
+
+        <property name="title" column="title" type="string" />
+        <property name="description" column="description" type="string" />
+        <subclass name="crud.model.LocationBasedClass" discriminator-value="LBC"> 
+            <property name="location" column="location" type="string" />
+        </subclass> 
+        <subclass name="crud.model.PartnershipClass" discriminator-value="PSC"> 
+            <property name="partner" column="partner" type="string" />
+        </subclass> 
+        <subclass name="crud.model.PaidClass" discriminator-value="PC"> 
+            <property name="price" column="price" type="double" />
+        </subclass> 
+    </class>
+
+</hibernate-mapping>

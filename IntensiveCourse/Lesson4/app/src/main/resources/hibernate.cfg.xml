@@ -13,6 +13,7 @@
         <property name="hibernate.connection.password">haru</property>
         <mapping resource="student.hbm.xml"/>
         <mapping resource="class.hbm.xml"/>
+        <mapping resource="abstract_class.hbm.xml"/>
     </session-factory>
 
 </hibernate-configuration>
