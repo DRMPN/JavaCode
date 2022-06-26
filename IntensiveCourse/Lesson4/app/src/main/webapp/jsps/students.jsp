@@ -11,6 +11,7 @@
         </head>
 
         <body>
+            <h1><a href="/app">University Management System</a></h1>
             <h2>Add / Edit student</h2>
             <form action="students" method="post">
                 <input type="hidden" name="studentId" value="${student.studentId}">

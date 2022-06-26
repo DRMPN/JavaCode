@@ -12,6 +12,7 @@
         </head>
 
         <body>
+            <h1><a href="/app">University Management System</a></h1>
             <h2>Add / Edit class</h2>
             <form action="classes" method="post">
                 <input type="hidden" name="classId" value="${clazz.classId}">
