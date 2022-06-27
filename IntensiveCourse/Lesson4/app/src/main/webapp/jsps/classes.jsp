@@ -31,7 +31,7 @@
                 </ul>
             </form>
 
-            <h2>All CLasses</h2>
+            <h2>All Classes</h2>
             <table>
                 <thead>
                     <tr>

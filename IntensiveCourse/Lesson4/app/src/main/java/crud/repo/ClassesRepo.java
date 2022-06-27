@@ -9,6 +9,7 @@ import crud.model.Class;
 import crud.utility.HibernateDataSource;
 
 // TODO: add SET methods
+// TODO: add abstract classes
 public class ClassesRepo {
 
     public static Class findClassById(int classId) {
