@@ -2,6 +2,6 @@
 <endpoints
         xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
     <endpoint name="Router"
-              implementation="com.soap.RouterServiceImpl"
+              implementation="com.soap.impl.RouterServiceImpl"
               url-pattern="/router" />
 </endpoints>
