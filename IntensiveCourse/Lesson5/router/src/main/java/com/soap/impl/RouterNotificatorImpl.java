@@ -1,17 +1,29 @@
 package com.soap.impl;
 
-import java.util.List;
-
-import jakarta.jws.WebService;
-
 import com.soap.service.RouterNotificator;
+import jakarta.jws.WebService;
+import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.Message;
+import org.telegram.telegrambots.meta.api.objects.Update;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-@WebService(endpointInterface = "com.soap.RouterService")
-public class RouterNotificatorImpl implements RouterNotificator {
+import java.io.File;
+
+@WebService(endpointInterface = "com.soap.impl.RouterNotificatorImpl")
+public class RouterNotificatorImpl implements RouterNotificator{
 
     @Override
-    public void sendNotification(List<String> untractedUsers) {
-        // TODO: untractedUsers send to telegram
+    public String sendNotification(String untrackedUsers) {
+        // TODO: untrackedUsers send to telegram
+        System.out.println(untrackedUsers);
+        return "Hello";
+    }
+
+    @Override
+    public String sendReport(File file) {
+        System.out.println(file.getName());
+        return "Hello";
     }
 
 }
